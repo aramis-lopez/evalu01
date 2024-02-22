@@ -1,0 +1,31 @@
+"""
+Programa: eva01.py
+Alumno:Aramis lopez cruz
+Matricula:1723110637
+Fecha:29/01/24
+"""
+class Profesor():
+    id = None
+    nombre = ""
+    materias = []
+
+
+    def __init__(self, id, nombre, materias):
+        self.id = id
+        self.nombre = nombre
+        self.materias = materias
+        print("constructor objeto" + "Profesor")
+
+
+    def _califica(self):
+        print(f"El profesor {self.nombre} califica evaluaciones de la materia {self.materias}".format(self.nombre, self.materias[0]))
+
+
+    def _pasaAsistencia(self):
+      print(f"El profesor {self.nombre} pasa asistencia")
+
+profesor1 = Profesor("111" ,"Profesor 1")
+profesor1.materias.append("Materia 1")
+profesor1.materias.append("Materia 2")
+profesor1.califica()
+profesor1.pasaAsistencia()
